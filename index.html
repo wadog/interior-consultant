@@ -7,61 +7,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>consultor de interiores</title>
     <!--CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">This Interior</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Colletion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">This Interior</a>
+            <button>
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+            <div class="menuDesplegable">
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Collection</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
     </header>
     <section>
-        <div class="container">
-            <div class="col-6">
-                <div class="info">
-                    <h1>Modern interior</h1>
-                    <p>A full-Service residencial & commercial interior design and staging company offering professional
-                        organizing & eco-services.</p>
-                    <button>Read more -></button>
-                </div>
-            </div>
-            <div class="col-6">
-                <div>
-                    <img src="css/img/flying-pendant-lights-colourful-stools-kitsch-living-room.jpg" alt="" id="imgHero">
-                </div>
-                <div class="card">
-                    
-                        <img src="css/img/292936695_5393525340726719_1391159474952252076_n.jpg" alt="">
-                        <h3>walter torres</h3>
-                        <p>Interior Designer</p>
-                    
-                    <h2>Designed in 2023 by Walter Tores</h2>
-                </div>
+        <div class="col-6 info">
+            <h1>Modern interior</h1>
+            <p>A full-Service residencial & commercial interior design and staging company offering professional
+                organizing & eco-services.</p>
+            <button id="btnMore">Read more
+                <span class="material-symbols-outlined">
+                    trending_flat
+                </span>
+            </button>
+        </div>
+        <div class="col-6">
+            <img src="css/img/flying-pendant-lights-colourful-stools-kitsch-living-room.jpg"
+                class="img-fluid rounded float-end" alt="" id="imgHero">
+            <div class="card">
+                <img src="css/img/292936695_5393525340726719_1391159474952252076_n.jpg" alt="">
+                <h3>walter torres</h3>
+                <p>Interior Designer</p>
+                <h2>Designed in 2023 by Walter Torres</h2>
             </div>
         </div>
     </section>
@@ -72,6 +68,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+    <script src="js/menuDesplegable.js"></script>
 </body>
 
 </html>
