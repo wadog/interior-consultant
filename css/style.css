@@ -64,13 +64,19 @@ header li {
     line-height: 22px;
 
 }
-
-.container-fluid button {
-    border: none;
-    padding: 0;
+.btnOpenMenu{
     display: none;
 }
 
+.container-fluid button {
+    color: #fff;
+    background-color: #181719;
+    border: none;
+}
+
+.container-fluid button span {
+    width: 28.5px;
+}
 
 .nav-link:hover {
     border-bottom: 2px solid #fff;
@@ -137,6 +143,10 @@ header li {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+}
+
+.container-fluid button span {
+    font-size: 28.5px;
 }
 
 .material-symbols-outlined {
@@ -206,7 +216,6 @@ span img {
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
-
     font-size: 24px;
     width: 280px;
     margin: 30px 0 0 26px;
@@ -221,17 +230,52 @@ footer {
     bottom: 4px;
     position: relative;
 }
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
 
 /* MOBILE */
 
 @media (max-width: 425px) {
 
-    header {
-        margin: 20px;
+    .navbar-brand {
+        position: absolute;
+        width: 103px;
+        height: 31px;
+        left: 12px;
+        top: 19px;
+    }
+
+    .container-fluid {
+        justify-content: center;
+    }
+
+    .menuDesplegable {
+        display: none;
+        justify-content: space-around;
+    }
+    .btnOpenMenu {
+        display: flex;
+    }
+    header ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        margin: 0px;
+    }
+    
+    header ul li {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        padding-bottom: 32px;
+        text-align: center;
     }
 
     button {
-        display: block;
+        display: flex;
         position: absolute;
         top: 10px;
         right: 10px;
@@ -239,24 +283,6 @@ footer {
 
     .info {
         position: initial;
-    }
-
-    .menuDesplegable {
-        display: none;
-        justify-content: space-around;
-    }
-
-    ul {
-        flex-direction: column;
-        padding: 0px;
-        align-items: center;
-        height: 80vh;
-    }
-
-    ul li {
-        list-style: none;
-        height: 25%;
-
     }
 
     .info h1 {
@@ -283,59 +309,67 @@ footer {
         font-weight: 400;
         font-size: 14px;
         line-height: 17px;
+        margin: 0PX;
     }
 
     .info button {
         position: absolute;
         left: 12px;
-        top: 246px;
+        top: 269px;
         background: none;
         border: none;
         color: #fff;
         padding: 0;
     }
 
-    #imgHero {
-        width: 737px;
-        padding: 0px 10px 0 10px;
-        height: auto;
-        display: flex;
-        right: 0;
-        top: 300px;
+    .info button span {
+        top: 0px;
+        left: 15px;
     }
 
-    .card {
-        width: 300px;
-        height: 138px;
-        left: 52px;
-        top: 536px;
-    }
-
-    .card img {
-        width: 36px;
-        height: 36px;
-        margin-left: 22px;
-        margin-top: 22px;
-    }
-
-    .card h3 {
-        margin-top: 22px;
-        font-size: 12px;
-    }
-
-    .card p {
-        font-size: 10px;
-    }
-
-    .card h2 {
-        font-size: 18px;
-        width: 210px;
-        margin-top: 0px;
-    }
-
-    footer {
-        top: 200px;
-    }
+#imgHero {
+    position: absolute;
+    width: 90%;
+    margin: 5%;
+    height: 264.32px;
+    left: 0px;
+    top: 323px;
 }
 
+.card {
+    width: 300px;
+    height: 138px;
+    right: 32px;
+    top: 536px;
+}
+
+.card img {
+    width: 36px;
+    height: 36px;
+    margin-left: 22px;
+    margin-top: 22px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 12px;
+    margin-left: 75px;
+    line-height: 15px;
+}
+
+.card p {
+    font-size: 10px;
+    margin-left: 75px;
+}
+
+.card h2 {
+    font-size: 18px;
+    width: 210px;
+    margin-top: 0px;
+}
+
+footer {
+    top: 200px;
+}
+}
 /**/
